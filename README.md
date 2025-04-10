@@ -1,2 +1,2 @@
-# macpack
-MacPack is an application packager and install for Mac
+# MacPack
+MacPack is an application packager and installer for Mac
