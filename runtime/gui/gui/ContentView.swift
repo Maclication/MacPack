@@ -92,7 +92,7 @@ struct ContentView: View {
         
         // Resolve absolute path for bundle
         let homeDir = FileManager.default.homeDirectoryForCurrentUser
-        let macpackPath = homeDir.appendingPathComponent("projs/MacPack/runtime/target/debug/macpack")
+        let macpackPath = homeDir.appendingPathComponent(".macpack/bin/macpack")
         
         // Resolve the full absolute path for the bundlePath if it's not absolute
         let fullBundlePath = URL(fileURLWithPath: bundlePath, isDirectory: true).standardized

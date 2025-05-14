@@ -6,7 +6,7 @@ func runBundle(bundlePath: String) {
     
     // Resolve absolute path for bundle
     let homeDir = FileManager.default.homeDirectoryForCurrentUser
-    let macpackPath = homeDir.appendingPathComponent("projs/MacPack/runtime/target/debug/macpack")
+    let macpackPath = homeDir.appendingPathComponent(".macpack/bin/macpack")
     
     // Resolve the full absolute path for the bundlePath if it's not absolute
     let fullBundlePath = URL(fileURLWithPath: bundlePath, isDirectory: true).standardized
@@ -38,6 +38,7 @@ struct MacPack: App {
         let arguments = CommandLine.arguments
         if arguments.count > 1 {
             if arguments[1] == "-NSDocumentRevisionsDebugMode" {
+                print("Debug mode. Not getting any arguments")
                 return
             }
             let bundlePath = arguments[1]
