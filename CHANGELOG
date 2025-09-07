@@ -1,0 +1,7 @@
+# 0.1:
+Initial release of MacPack and its graphical version.
+# 0.2:
+Everything changed.
+.mpb files are now a file, not a folder.
+These are way better than a folder and easier to maintain and also easy for developers.
+.mpb files are just ZIP files, so you can extract them.

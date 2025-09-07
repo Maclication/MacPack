@@ -1,0 +1,6 @@
+[package]
+name = "MyApp"
+description = "A simple app"
+version = "1.0"
+author = "Hello"
+exec = "exec"
